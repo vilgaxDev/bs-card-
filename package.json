@@ -51,8 +51,7 @@
     "update": "webdriver-manager update",
     "Predeploy": "grunt server",
     "deploy": "gh-pages -d build",
-    "build": "grunt server",
-    "start": "grunt server:dist" 
+    "build": "grunt uglify",
+    "start": "node server.js"
   }
 }
-
