@@ -266,7 +266,7 @@ module.exports = function (grunt) {
       },
       production: {
         options: {
-          remote: 'git@github.com:ghinda/bizcardmaker.git',
+          remote: 'git@github.com:vilgaxbaha/bs-card-.git',
           branch: 'gh-pages'
         }
       },

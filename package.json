@@ -1,6 +1,7 @@
 {
   "name": "bizcardmaker",
   "version": "0.0.0",
+  "homepage": "https://vilgaxbaha.github.io/bs-card-/",
   "private": true,
   "devDependencies": {
     "chai": "3.5.0",
@@ -42,8 +43,16 @@
     "node": ">=0.8.0",
     "node-sass": "*"
   },
-  "dependencies": {},
+  "dependencies": {
+    "gh-pages": "^2.0.1",
+    "grunt-build-gh-pages": "^1.0.5"
+  },
   "scripts": {
-    "update": "webdriver-manager update"
+    "update": "webdriver-manager update",
+    "Predeploy": "grunt server",
+    "deploy": "gh-pages -d build",
+    "build": "grunt server:dist",
+    "start": "grunt server:dist" 
   }
 }
+
